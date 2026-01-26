@@ -2,6 +2,10 @@
   "name": "@arasaka-cinema/contracts",
   "version": "1.0.0",
   "description": "Protobuf definitions and generated TypeScript types for Arasaka Cinema",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arasaka-cinema/contracts"
+  },
   "scripts": {
     "generate": "protoc -I ./proto ./proto/*.proto --ts_proto_out=./gen --ts_proto_opt=nestJs=true,package=omit"
   },
