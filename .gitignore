@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+build/
+.yarnrc
+.yarnrc.yml
+yarn.lock
+.pnpm-lock.yaml
+pnpm-lock.yaml
+yarn-error.log
+pnpm-error.log
+.idea/
+.vscode/
+.log
+.env
