@@ -1,24 +1,35 @@
 {
-  "name": "@arasaka-cinema/contracts",
-  "version": "1.0.1",
-  "description": "Protobuf definitions and generated TypeScript types for Arasaka Cinema",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arasaka-cinema/contracts"
-  },
-  "scripts": {
-    "generate": "protoc -I ./proto ./proto/*.proto --ts_proto_out=./gen --ts_proto_opt=nestJs=true,package=omit"
-  },
-  "files": [
-    "gen",
-    "proto"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "@nestjs/microservices": "^11.1.12",
-    "rxjs": "^7.8.2",
-    "ts-proto": "^2.11.1"
-  }
+	"name": "@arasaka-cinema/contracts",
+	"version": "1.0.2",
+	"description": "Protobuf definitions and generated TypeScript types for Arasaka Cinema",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/arasaka-cinema/contracts"
+	},
+	"scripts": {
+		"generate": "protoc -I ./proto ./proto/*.proto --ts_proto_out=./gen --ts_proto_opt=nestJs=true,package=omit",
+		"build": "tsc -p ./tsconfig.build.json",
+		"format": "prettier --write \"src/**/*.ts\""
+	},
+	"files": [
+		"gen",
+		"proto"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"dependencies": {
+		"@arasaka-cinema/core": "^1.0.4",
+		"@nestjs/microservices": "^11.1.12",
+		"rxjs": "^7.8.2",
+		"ts-proto": "^2.11.1"
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^6.0.2",
+		"@types/node": "^25.1.0",
+		"prettier": "^3.8.1",
+		"typescript": "^5.9.3"
+	}
 }
