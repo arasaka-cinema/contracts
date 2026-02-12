@@ -3,7 +3,8 @@
 	"compilerOptions": {
 		"declaration": true,
 		"outDir": "dist",
+		"rootDir": ".",
 	},
-	"include": ["src/**/*"],
+	"include": ["src/**/*", "gen/**/*"],
 	"exclude": ["node_modules", "dist", "test"]
 }

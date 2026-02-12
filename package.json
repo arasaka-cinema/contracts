@@ -1,9 +1,19 @@
 {
 	"name": "@arasaka-cinema/contracts",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "Protobuf definitions and generated TypeScript types for Arasaka Cinema",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"main": "./dist/src/index.js",
+	"types": "./dist/src/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/src/index.d.ts",
+			"default": "./dist/src/index.js"
+		},
+		"./gen/*": {
+			"types": "./dist/gen/*.d.ts",
+			"default": "./dist/gen/*.js"
+		}
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/arasaka-cinema/contracts"
