@@ -1,6 +1,6 @@
 {
 	"name": "@arasaka-cinema/contracts",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Protobuf definitions and generated TypeScript types for Arasaka Cinema",
 	"main": "./dist/src/index.js",
 	"types": "./dist/src/index.d.ts",
